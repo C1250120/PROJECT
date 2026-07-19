@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CA252 Architecture Studio — Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #efeee8;
+      color: #1b1a17;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1b1a17;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .logo span {
+      color: #a9754a;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+          &:hover{
+        color: #65605a;
+        background-color: white;
+        padding: 5px;
+      }
+    }
+    nav ul li a.current {
+      color: #a9754a;
+      font-weight: bold;
+    }
+
+    .content-container {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px 0;
+      max-width: 600px; 
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #a9754a;
+      padding-bottom: 8px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #d3cdbf;
+      background-color: #f7f6f1;
+      box-sizing: border-box; 
+      font-size: 14px;
+    }
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      background-color: #33475b;
+      color: #ffffff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      border-radius: 4px;
+    }
+    .submit-btn:hover {
+      background-color: #1b1a17;
+    }
+
+    footer {
+      background-color: #1b1a17;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="logo">CA252 <span>ARCHITECTURE STUDIO</span></div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery/Data</a></li>
+        <li><a href="booking.html" class="current">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    <h2>Book a Consultation</h2>
+    <p>Fill out the form below to plan your next architecture project with our team.</p>
+
+
+    <form action="#" method="POST">
+      
+
+      <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+
+      <div class="form-group">
+        <label for="emai">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="project-type">Building Type:</label>
+        <select id="project-type" name="project-type" required>
+          <option value="">Select your project layout</option>
+          <option value="jingad">Family Home</option>
+          <option value="of">Office</option>
+          <option value="villa">Villa</option>
+          <option value="apartment">Apartment</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="date">Meeting Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Project Details:</label>
+        <textarea id="notes" name="notes" rows="5" placeholder="Tell us a little bit about your location or design goals..."></textarea>
+      </div>
+
+     
+      <button type="submit" class="submit-btn">Submit Booking Request</button>
+
+    </form>
+  </main>
+  <footer class="site-footer">
+    <span>&copy; 2026 CA252, Mogadishu</span>
+  </footer>
+
+</body>
+</html>

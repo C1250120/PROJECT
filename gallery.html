@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CA252 Architecture Studio — Gallery & Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #efeee8;
+      color: #1b1a17;
+      margin: 0;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1b1a17;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .logo span {
+      color: #a9754a;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      &:hover{
+        color: #65605a;
+        background-color: white;
+        padding: 5px;
+      }
+    }
+    nav ul li a.current {
+      color: #a9754a;
+      font-weight: bold;
+    }
+
+    .content-container {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px 0;
+    }
+    h2 {
+      border-bottom: 2px solid #a9754a;
+      padding-bottom: 8px;
+    }
+
+    .gallery-row {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .gallery-item {
+      display: inline-block;
+      width: 230px;
+      background-color: #f7f6f1;
+      border: 1px solid #d3cdbf;
+      padding: 10px;
+      margin: 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 150px; 
+      object-fit: cover;
+      background-color: #ddd; 
+    }
+    .gallery-item h3 {
+      font-size: 16px;
+      margin: 10px 0 5px 0;
+    }
+    .gallery-item p {
+      font-size: 14px;
+      margin: 0;
+      color: #65605a;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    .data-table th, .data-table td {
+      border: 1px solid #d3cdbf;
+      padding: 12px;
+      text-align: left;
+    }
+    .data-table th {
+      background-color: #1b1a17;
+      color: #ffffff;
+    }
+    .data-table tr:nth-child(even) {
+      background-color: #f7f6f1;
+    }
+
+    footer {
+      background-color: #1b1a17;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CA252 <span>ARCHITECTURE FIRM</span></div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="current">Gallery/Data</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content-container">
+    
+   
+    <h2>Our Project Gallery</h2>
+    <div class="gallery-row">
+      
+      <div class="gallery-item">
+        <img src="villa.jpg" alt="Villa">
+        <h3>Villa</h3>
+        <p>Mogadishu, Somalia</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="apartment.jpg" alt="dabaq">
+        <h3>Apartment</h3>
+        <p>Nairobi, Kenya</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="jamacad.jpg" alt="jamacad">
+        <h3>University</h3>
+        <p>Banadir, Somalia</p>
+      </div>
+
+      <div class="gallery-item">
+        <img src="caffe.jpeg" alt="Caffe">
+        <h3>Caffe shop</h3>
+        <p>Liido, Somalia</p>
+      </div>
+
+    </div>
+
+    <h2>Project Costs & Timelines</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Building Type</th>
+          <th>Cost</th>
+          <th>Construction Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>University</strong></td>
+          <td>$120,000</td>
+          <td>16 - 18 Months</td>
+        </tr>
+        <tr>
+          <td><strong>Caffe/Resturant</strong></td>
+          <td>$50,000</td>
+          <td>10 - 12 Months</td>
+        </tr>
+        <tr>
+          <td><strong>Villa</strong></td>
+          <td>$180,000</td>
+          <td>16 - 20 Months</td>
+        </tr>
+        <tr>
+          <td><strong>Apartment</strong></td>
+          <td>$650,000</td>
+          <td>18 - 24 Months</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+  <footer class="site-footer">
+  <span>&copy; 2026 CA252, Mogadishu</span>
+  </footer>
+</body>
+</html>

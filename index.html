@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CA252 Architecture Firm — Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #efeee8;
+      color: #1b1a17;
+      margin: 0;
+      padding: 20px;
+    }
+    
+   
+    header {
+      background-color: #1b1a17;
+      color: #ffffff;
+      padding: 25px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .logo span {
+      color: #a9754a;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+        &:hover{
+        color: #65605a;
+        background-color: white;
+        padding: 5px;
+      }
+    }
+ 
+    nav ul li a.current {
+      color: #a9754a;
+      font-weight: bold;
+    }
+
+
+    .hero {
+      background-color: #f7f6f1;
+      padding: 50px 20px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #473700;
+      color: #ffffff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .btn:hover {
+      background-color: #1b1a17;
+      transform: scale(1.05);
+    }
+
+    .speech-section {
+      background-color: #1b1a17;
+      color: #efeee8;
+      padding: 40px 25px;
+      margin: 20px 0;
+      text-align: center;
+      border-left: 5px solid #a9754a;
+    }
+    .speech-section h2 {
+      color: #a9754a;
+      margin-top: 0;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .speech-text {
+      font-style: italic;
+      font-size: 16px;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .card-row {
+      text-align: center;
+    }
+    .card {
+      display: inline-block;
+      width: 250px;
+      background-color: #f7f6f1;
+      border: 1px solid #d3cdbf;
+      padding: 15px;
+      margin: 10px;
+      vertical-align: top;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #1b1a17;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">CA252 <span>ARCHITECTURE FIRM</span></div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="gallery.html">Gallery/Data</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    
+    <section class="hero">
+      <h1>Welcome to CA252, Where Dreams Come True</h1>
+      <p class="lede">We design and construct whatever you envision. Bring your ideas to life with premium quality layouts at an affordable cost.</p>
+      <a class="btn" href="gallery.html">View Our Projects</a>
+    </section>
+
+    <section class="speech-section">
+      <h2>The Power Behind Our Blueprints</h2>
+      <p class="speech-text">
+        "Great architectural layouts mean nothing without the master builders, engineers, and dedicated workers who work tirelessly to execute them on-site. At CA252, our greatest foundation isn't concrete—it is our people. Below, we proudly spotlight our standout team members who bring your structural dreams to reality day after day."
+      </p>
+    </section>
+
+
+    <section class="section">
+      <div class="section-inner">
+        <h2>Our professional Team</h2>
+        <p>The Employees of the week:</p>
+        
+        <div class="card-row">
+          
+          <div class="card">
+            <img src="enginer.jpg" alt="Smlgamer">
+            <h3>Engineer</h3>
+            <p>CABDI, 24 years old</p>
+          </div>
+          
+          <div class="card">
+            <img src="cabdi.jpg" alt="East">
+            <h3>XAMALI</h3>
+            <p>Axmed Benale, 27 years old</p>
+          </div>
+          
+          <div class="card">
+            <img src="oyaye.jpeg" alt="Wakahaya tlye">
+            <h3>Fatale</h3>
+            <p>C/qani Oyaye</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>&copy; 2026 CA252, Mogadishu</span>
+  </footer>
+
+</body>
+</html>
