@@ -1,221 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Profile — Nawaf (CA252)</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #efeee8;
-      color: #1b1a17;
-      margin: 0;
-      padding: 20px;
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile — Nawaf (CA252)</title>
+  <style>
 
-    header {
-      background-color: #1b1a17;
-      color: #ffffff;
-      padding: 15px;
-      text-align: center;
-    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #efeee8;
+      color: #1b1a17;
+      margin: 0;
+      padding: 20px;
+    }
 
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
+  
+    header {
+      background-color: #1b1a17;
+      color: #ffffff;
+      padding: 15px;
+      text-align: center;
+    }
 
-    .logo span {
-      color: #a9754a;
-    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
 
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+    .logo span {
+      color: #a9754a;
+    }
 
-    nav ul li {
-      display: inline;
-      margin: 0 10px;
-    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-    nav ul li a {
-      color: #ffffff;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
+    }
 
-    nav ul li a:hover {
-      color: #65605a;
-      background-color: white;
-      padding: 5px;
-    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+          &:hover{
+        color: #65605a;
+        background-color: white;
+        padding: 5px;
+      }
+    }
 
-    nav ul li a.current {
-      color: #a9754a;
-      font-weight: bold;
-    }
+    nav ul li a.current {
+      color: #a9754a;
+      font-weight: bold;
 
-    .content-container {
-      background-color: #ffffff;
-      padding: 30px;
-      margin: 20px 0;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    }
+    .content-container {
+      background-color: #ffffff;
+      padding: 30px;
+      margin: 20px 0;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-    h2 {
-      border-bottom: 2px solid #a9754a;
-      padding-bottom: 8px;
-      margin-top: 30px;
-    }
+    h2 {
+      border-bottom: 2px solid #a9754a;
+      padding-bottom: 8px;
+      margin-top: 30px;
+    }
 
-    /* Profile Table Styling */
-    .profile-card {
-      background-color: #f7f6f1;
-      border: 1px solid #d3cdbf;
-      padding: 25px;
-      border-radius: 6px;
-      margin-top: 15px;
-    }
+  
+    .profile-card {
+      background-color: #f7f6f1;
+      border: 1px solid #d3cdbf;
+      padding: 20px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
 
-    .profile-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+    .profile-details {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
 
-    .profile-table td {
-      padding: 10px 0;
-      border-bottom: 1px dashed #d3cdbf;
-      font-size: 16px;
-      vertical-align: middle;
-    }
+    .profile-details li {
+      padding: 8px 0;
+      border-bottom: 1px dashed #d3cdbf;
+      font-size: 16px;
+    }
 
-    /* Removes bottom border from the final data row */
-    .profile-table tr:last-of-type td:not(.photo-cell) {
-      border-bottom: none;
-    }
+    .profile-details li:last-child {
+      border-bottom: none;
+    }
 
-    .profile-table strong {
-      color: #33475b;
-      display: inline-block;
-      width: 120px;
-    }
+    .profile-details strong {
+      color: #33475b;
+      display: inline-block;
+      width: 120px;
+    }
 
-    /* Setup for the specific right-side image column */
-    .photo-cell {
-      width: 150px;
-      padding-left: 20px !important;
-      border-bottom: none !important; /* Overrides dashed borders for the picture column */
-    }
+    .info-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
 
-    .photo-placeholder {
-      width: 150px;
-      height: 180px;
-      border: 2px dashed #a9754a;
-      background-color: #efeee8;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #65605a;
-      font-size: 14px;
-      text-align: center;
-      box-sizing: border-box;
-      padding: 10px;
-      overflow: hidden;
-    }
+    .info-list li {
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
 
-    .photo-placeholder img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* Keeps image proportions clean without distortion */
-    }
 
-    footer {
-      background-color: #1b1a17;
-      color: #ffffff;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-
-    /* Responsive shift for mobile viewport widths */
-    @media (max-width: 600px) {
-      .profile-table, .profile-table tbody, .profile-table tr, .profile-table td {
-        display: block;
-        width: 100%;
-      }
-      .photo-cell {
-        padding-left: 0 !important;
-        margin-top: 20px;
-        display: flex !important;
-        justify-content: center;
-      }
-      .profile-table strong {
-        display: block;
-        width: 100%;
-        margin-bottom: 4px;
-      }
-    }
-  </style>
+    footer {
+      background-color: #1b1a17;
+      color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <header class="site-header">
-    <div class="logo">CA252 <span>ARCHITECTURE STUDIO</span></div>
-    <nav id="main-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery/Data</a></li>
-        <li><a href="booking.html">Booking</a></li>
-        <li><a href="help.html">Help</a></li>
-        <li><a href="about.html" class="current">About</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="content-container">
-    <h2>Student Information</h2>
-    <p>Welcome to my student profile page. This website project was developed as part of my academic coursework requirements to demonstrate web development and layout design skills.</p>
-    
-    <div class="profile-card">
-      <table class="profile-table">
-        <tbody>
-          <tr>
-            <td><strong>Name:</strong> Nawaf Ahmed Mohamed</td>
-            <!-- The rowspan holds the place across all 5 rows on the right side -->
-            <td rowspan="5" class="photo-cell">
-              <div class="photo-placeholder">
-                <!-- Replace the line below with <img src="your-photo.jpg" alt="Nawaf"> when ready -->
-                <span>[ Photo Holder ]</span>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>Student ID:</strong> C1250120</td>
-          </tr>
-          <tr>
-            <td><strong>Class Code:</strong> CA252</td>
-          </tr>
-          <tr>
-            <td><strong>Project Title:</strong> Architecture Studio Web Design</td>
-          </tr>
-          <tr>
-            <td><strong>Year:</strong> 2026</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </main>
+  <header class="site-header">
+    <div class="logo">CA252 <span>ARCHITECTURE STUDIO</span></div>
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery/Data</a></li>
+        <li><a href="booking.html">Booking</a></li>
+        <li><a href="help.html">Help</a></li>
+        <li><a href="about.html" class="current">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <footer class="site-footer">
-    <span>&copy; 2026 CA252, Mogadishu</span>
-  </footer>
+ 
+  <main class="content-container">
+    <h2>Student Information</h2>
+    <p>Welcome to my student profile page. This website project was developed as part of my academic coursework
+      requirements to demonstrate web development and layout design skills.</p>
+    <div class="profile-card">
+      <ul class="profile-details">
+        <li><strong>Name:</strong> Nawaf Ahmed Mohamed</li>
+        <li><strong>Student ID:</strong>C1250120</li>
+        <li><strong>Class Code:</strong> CA252</li>
+        <li><strong>Project Title:</strong> Architecture Studio Web Design</li>
+        <li><strong>Year:</strong> 2026</li>
+      </ul>
+    </div>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 CA252, Mogadishu</span>
+    </footer>
 
 </body>
+
 </html>
